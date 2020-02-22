@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:theme="@style/AppTheme"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="#70A6E6"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvSignin"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:shadowColor="#00BE5846"
+            android:text="Sign In"
+            android:gravity="center"
+            android:textColorLink="#00D36543"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:autoSizeMaxTextSize="@android:dimen/app_icon_size"
+            app:autoSizeMinTextSize="@android:dimen/thumbnail_width" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputLayoutUserName">
+            <EditText
+                android:id="@+id/etUserName"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:hint="Mobile Number/Email"
+                android:inputType="textPersonName" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputLayoutPassword"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:hint="Password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tvForgotPassowrd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/forgot_password"
+            android:textColor="#082BEE" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Login" />
+
+        <TextView
+            android:id="@+id/tvConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Connect With Other Ways" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/iBtnGoogle"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/google1" />
+
+            <ImageButton
+                android:id="@+id/iBtnTwitter"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/twitter" />
+
+            <ImageButton
+                android:id="@+id/ibtnFacebook"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/facebook" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCreateAccount"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:paddingLeft="25dp"
+            android:text="Create Account"
+            android:textColor="#1133F0" />
+
+    </LinearLayout>
+</RelativeLayout>

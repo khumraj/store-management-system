@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_View">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/homepage"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/nav_price_list"
+            android:title="Price List"
+            android:icon="@drawable/price"
+            app:showAsAction="never"/>
+
+        <item android:id="@+id/nav_customer_list"
+            android:title="Customer List"
+            android:icon="@drawable/customer"
+            app:showAsAction="never"/>
+
+        <item android:id="@+id/nav_transaction_details"
+            android:title="Transaction List"
+            android:icon="@drawable/transaction"
+            app:showAsAction="never"/>
+
+        <item android:id="@+id/nav_supplier"
+            android:title="Supplier List"
+            android:icon="@drawable/supplier26"
+            app:showAsAction="never"/>
+
+        <item android:id="@+id/nav_profile"
+            android:title="Profile"
+            android:icon="@drawable/profile"
+            app:showAsAction="never"/>
+    </group>
+</menu>

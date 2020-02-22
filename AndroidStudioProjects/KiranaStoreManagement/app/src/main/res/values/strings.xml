@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Kirana Store Management</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="navigation_drawer_open">Open navigation</string>
+    <string name="navigation_drawer_close">Close navigation</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
